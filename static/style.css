@@ -1,0 +1,75 @@
+body {
+    background: linear-gradient(135deg, #b2fefa, #e0c3fc);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #4a4a4a;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 350px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.cell {
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    font-size: 2rem;
+    color: #007aff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    aspect-ratio: 1;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #d1e8ff;
+}
+
+.restart-button {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.restart-button:hover {
+    background: linear-gradient(135deg, #ff5a75, #ff85a0);
+}
+
+.message {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #4a4a4a;
+    font-weight: bold;
+}
